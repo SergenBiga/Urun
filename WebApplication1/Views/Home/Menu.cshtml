@@ -1,0 +1,7 @@
+﻿@model IEnumerable<WebApplication1.Models.KategoriModel>
+
+
+@foreach (var item in Model)
+{
+    <li><a href="/Home/KategoriDetay/@item.KategoriModelID">@item.KategoriAdi</a></li>
+}

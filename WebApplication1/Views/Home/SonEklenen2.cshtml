@@ -1,0 +1,6 @@
+﻿@model IEnumerable<WebApplication1.Models.UrunlerModel>
+
+@foreach (var item in Model)
+{
+    <li><a href="/Yonetim/UrunDetay/@item.UrunlerModelID">@item.UrunAdi</a></li>
+}

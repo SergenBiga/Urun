@@ -1,0 +1,15 @@
+﻿@model WebApplication1.Models.UrunlerModel
+@{
+    ViewBag.Title = "UrunDetay";
+}
+
+<h2>UrunDetay</h2> 
+
+<b>Ürün Adı:</b> @Model.UrunAdi <br />
+<b>Ürün Resmi:</b><img src= @Model.UrunResmiURL height="300" width="300" /> <br />
+<b>Ürün Özellikler:</b> @Model.UrunOzellikleri <br />
+<div class="urunvideo"><b>Ürün Tanıtım Videosu:</b> @Html.Raw(Model.UrunTanitimVideosu)  <br /></div>
+<b>Fiyat:</b> @Model.Fiyat <br />
+<b>KategoriID:</b> @Model.KategoriID 
+
+

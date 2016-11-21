@@ -1,0 +1,36 @@
+﻿@model WebApplication1.Models.UrunlerModel
+@{
+    ViewBag.Title = "UrunDuzenle";
+}
+
+<h2>UrunDuzenle</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(x => x.UrunAdi)
+        @Html.TextBoxFor(x => x.UrunAdi)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.UrunResmiURL)
+        @Html.TextBoxFor(x => x.UrunResmiURL)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.UrunOzellikleri)
+        @Html.TextBoxFor(x => x.UrunOzellikleri)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.UrunTanitimVideosu)
+        @Html.TextBoxFor(x => x.UrunTanitimVideosu)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Fiyat)
+        @Html.TextBoxFor(x => x.Fiyat)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.KategoriID)
+        @Html.TextBoxFor(x => x.KategoriID)
+    </div>
+    <input type="submit" value="Kaydet" />
+
+}

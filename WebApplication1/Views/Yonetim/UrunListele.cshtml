@@ -1,0 +1,10 @@
+﻿@model IEnumerable<WebApplication1.Models.UrunlerModel>
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <div>@item.UrunAdi <a href="/Yonetim/UrunSil/@item.UrunlerModelID" class="ajax_right">Ürün Sil</a> <a href="/Yonetim/UrunDuzenle/@item.UrunlerModelID" class="ajax_right">Ürün Duzenle</a></div>
+        
+    }
+}

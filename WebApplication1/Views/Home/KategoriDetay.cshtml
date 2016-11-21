@@ -1,0 +1,22 @@
+﻿@model IEnumerable<WebApplication1.Models.UrunlerModel>
+@{
+    ViewBag.Title = "Home Page";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@ViewBag.mesaj
+@foreach (var item in Model)
+{
+    <div class="col-md-4">
+        <div class="product">
+            <a href="/Yonetim/UrunDetay/@item.UrunlerModelID"><img alt="dress1home" src="@item.UrunResmiURL"></a>
+            <div class="name">
+                <a href="">@item.UrunAdi</a>
+            </div>
+            <div class="price">
+                <p>@item.Fiyat</p>
+            </div>
+        </div>
+    </div>
+}  
